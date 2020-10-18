@@ -2,13 +2,13 @@ import React from 'react';
 
 function About() {
     return (
-        <div class="jumbotron">
-            <h1 class="display-3">About Me</h1>
-            <p class="lead">
+        <div className="jumbotron">
+            <h1 className="display-3">About Me</h1>
+            <p className="lead">
                 As a web developer, it is my goal to help create websites, applications, 
                 and tools that can be used by the masses to help improve their lives.
             </p>
-            <hr class="my-4" />
+            <hr className="my-4" />
             <h4>My Journey</h4>
             <p>
                 My professional journey to coding began differently than most programmers. It started when I graduated college with a degree 
