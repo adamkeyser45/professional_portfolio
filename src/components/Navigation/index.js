@@ -1,29 +1,22 @@
 import React from 'react';
 
-function Navigation() {
+function Navigation(props) {
+    const {
+        tabs = []
+    } = props;
+
     return (
         <nav>
             <ul>
-                <li>
-                    <a href="#about">
-                        About me
-                    </a>
-                </li>
-                <li>
-                    <a href="#portfolio">
-                        Portfolio
-                    </a>
-                </li>
-                <li>
-                    <a href="#contact">
-                        Contact
-                    </a>
-                </li>
-                <li>
-                    <a href="#resume">
-                        Resume
-                    </a>
-                </li>
+                {tabs.map((tab) => (
+                    <li
+                        key={tab.name}
+                    >
+                        <span>
+                            {tab.name}
+                        </span>
+                    </li>
+                ))}
             </ul>
         </nav>
     );
