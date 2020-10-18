@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function Navigation(props) {
     const {
         tabs = []
     } = props;
+    const [currentTab, setCurrentTab] =useState(tabs[0]);
+
+    function tabSelected(name) {
+        console.log(`${name} was clicked!`)
+    }
 
     return (
         <nav>
@@ -12,7 +17,7 @@ function Navigation(props) {
                     <li
                         key={tab.name}
                     >
-                        <span>
+                        <span onClick={() => tabSelected(tab.name)}>
                             {tab.name}
                         </span>
                     </li>
