@@ -2,10 +2,10 @@ import React from 'react';
 
 function Footer() {
     return (
-        <footer>
-            <p>
+        <footer className="footer fixed-bottom ">
+            <span className="d-flex justify-content-center text-muted mx-auto">
                 Copyright © Adam Keyser 2020
-            </p>
+            </span>
         </footer>
     )
 }
