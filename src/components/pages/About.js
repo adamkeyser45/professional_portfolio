@@ -22,6 +22,10 @@ function About() {
                 noises when interacted with by students. I began to see what amazing things could be done when you can incorporate education and 
                 programming.
             </p>
+            <p>
+                This is when I decided to make a change of careers, and pursue a career in Web Development. I began an online Coding Bootcamp through
+                Vanderbilt University, where I am earning a certificate in Full-Stack Web Development.
+            </p>
         </div>
     )
 }
