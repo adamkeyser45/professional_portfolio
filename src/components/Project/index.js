@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Project() {
-    const [projects] = [
+    const projects = [
         {
             name: 'The Speakeasy',
             image: require('../../assets/img/speakeasy_small.png'),
@@ -47,12 +47,18 @@ function Project() {
     ]
 
     return (
-        <div class="Project 1">
-        <img src="..." class="mr-3" alt="..."/>
-            <div class="media-body">
-                <h5 class="mt-0">Media heading</h5>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-            </div>
+        <div >
+            {projects.map(project => (
+                <div className="media border" key={project.name}>
+                    <img src={project.image} className="mr-3 p-2" alt=""/>
+                    <div className="media-body">
+                        <h5 className="mt-0">{project.name}</h5>
+                        <p>{project.description}</p>
+                        <a className="btn btn-primary m-1 p-2" href={project.deployedLink}>Check out the App!</a>
+                        <a className="btn btn-primary m-1 p-2" href={project.repoLink}>Check out the GitHub Repo!</a>
+                    </div>
+                </div>
+            ))}
         </div>
     )
 }
