@@ -1,9 +1,10 @@
 import React from 'react';
+import Project from '../Project';
 
 function Portfolio() {
     return (
-        <div>
-            This is the Portfolio Page!
+        <div className="m-4">
+            <Project />
         </div>
     )
 }
