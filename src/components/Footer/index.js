@@ -3,7 +3,7 @@ import React from 'react';
 function Footer() {
     return (
         <footer className="footer fixed-bottom bg-light">
-            <div className="d-flex justify-content-center mb-5 mb-lg-0">
+            <div className="d-flex justify-content-center">
                 <a className="btn btn-outline-light btn-social mx-1" 
                     href="https://www.facebook.com/adam.keyser">
                         <i className="fab fa-fw fa-facebook-f fa-lg" style={{background:"SkyBlue"}}></i></a>

@@ -6,20 +6,13 @@ import Footer from './components/Footer';
 
 function App() {
 
-  // const [tabs] = useState([
-  //   { name: "About Me" },
-  //   { name: "Portfolio" },
-  //   { name: "Contact" },
-  //   { name: "Resume" }
-  // ]);
-
   return (
     <div>
       <main>
         <Header></Header>
-        <Navigation></Navigation>
+        <Navigation />
+        <Footer />
       </main>
-      <Footer />
     </div>
   );
 }
