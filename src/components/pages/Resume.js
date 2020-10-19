@@ -31,7 +31,7 @@ function Resume() {
                 <div className="card text-center" style={{width: "33%", border: "none"}}>
                     <h2>Click here to download my Full Resume</h2>
                     <a href={require("../../assets/Adam_Keyser_Resume.pdf")} download>
-                    <i class="far fa-file-pdf fa-7x mx-auto" style={{width: "100px"}}></i>
+                    <i className="far fa-file-pdf fa-7x mx-auto" style={{width: "100px"}}></i>
                     </a>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Header from './components/Header';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
@@ -6,18 +6,18 @@ import Footer from './components/Footer';
 
 function App() {
 
-  const [tabs] = useState([
-    { name: "About Me" },
-    { name: "Portfolio" },
-    { name: "Contact" },
-    { name: "Resume" }
-  ]);
+  // const [tabs] = useState([
+  //   { name: "About Me" },
+  //   { name: "Portfolio" },
+  //   { name: "Contact" },
+  //   { name: "Resume" }
+  // ]);
 
   return (
     <div>
       <main>
         <Header></Header>
-        <Navigation tabs={tabs}></Navigation>
+        <Navigation></Navigation>
       </main>
       <Footer />
     </div>

@@ -28,6 +28,7 @@ function Navigation() {
                     <div className="navbar-nav">
                     {tabs.map(tab => (
                         <a 
+                            key={tab}
                             className="nav-item nav-link" 
                             href={"#" + tab.toLowerCase()}
                             onClick={() => setCurrentTab(tab)}    
@@ -47,31 +48,3 @@ function Navigation() {
 };
 
 export default Navigation;
-
-
-// function Navigation(props) {
-//     const {
-//         tabs = []
-//     } = props;
-//     const [currentTab, setCurrentTab] =useState(tabs[0]);
-
-//     function tabSelected(name) {
-//         console.log(`${name} was clicked!`)
-//     }
-
-//     return (
-//         <nav>
-//             <ul>
-//                 {tabs.map((tab) => (
-//                     <li
-//                         key={tab.name}
-//                     >
-//                         <span onClick={() => tabSelected(tab.name)}>
-//                             {tab.name}
-//                         </span>
-//                     </li>
-//                 ))}
-//             </ul>
-//         </nav>
-//     );
-// }
