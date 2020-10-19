@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/professional_portfolio/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/professional_portfolio/static/js/main.7970033a.chunk.js",
+    "main.js.map": "/professional_portfolio/static/js/main.7970033a.chunk.js.map",
+    "runtime-main.js": "/professional_portfolio/static/js/runtime-main.b4300739.js",
+    "runtime-main.js.map": "/professional_portfolio/static/js/runtime-main.b4300739.js.map",
+    "static/js/2.01a01f88.chunk.js": "/professional_portfolio/static/js/2.01a01f88.chunk.js",
+    "static/js/2.01a01f88.chunk.js.map": "/professional_portfolio/static/js/2.01a01f88.chunk.js.map",
+    "index.html": "/professional_portfolio/index.html",
+    "precache-manifest.15e2480bb7afec4dfede5d5dd54408d9.js": "/professional_portfolio/precache-manifest.15e2480bb7afec4dfede5d5dd54408d9.js",
+    "service-worker.js": "/professional_portfolio/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/professional_portfolio/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.01a01f88.chunk.js.LICENSE.txt": "/professional_portfolio/static/js/2.01a01f88.chunk.js.LICENSE.txt",
+    "static/media/Adam_Keyser_Resume.pdf": "/professional_portfolio/static/media/Adam_Keyser_Resume.90718660.pdf",
+    "static/media/adam_portrait_small.png": "/professional_portfolio/static/media/adam_portrait_small.f6aa98dd.png",
+    "static/media/budget_tracker_small.png": "/professional_portfolio/static/media/budget_tracker_small.6d6e773f.png",
+    "static/media/news_by_the_map_small.png": "/professional_portfolio/static/media/news_by_the_map_small.9395c062.png",
+    "static/media/regex_small.png": "/professional_portfolio/static/media/regex_small.35df09d5.png",
+    "static/media/social_network_api_small.png": "/professional_portfolio/static/media/social_network_api_small.a0636f1d.png",
+    "static/media/speakeasy_small.png": "/professional_portfolio/static/media/speakeasy_small.f8361fb3.png",
+    "static/media/tech_blog_small.png": "/professional_portfolio/static/media/tech_blog_small.35db2fbf.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b4300739.js",
+    "static/js/2.01a01f88.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.7970033a.chunk.js"
+  ]
+}
