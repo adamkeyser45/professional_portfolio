@@ -29,7 +29,7 @@ function Navigation() {
                     {tabs.map(tab => (
                         <a 
                             key={tab}
-                            className="nav-item nav-link" 
+                            className={`nav-item nav-link ${currentTab === tab && 'border'}`}
                             href={"#" + tab.toLowerCase()}
                             onClick={() => setCurrentTab(tab)}    
                         >
