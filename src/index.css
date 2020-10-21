@@ -5,9 +5,34 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #3D5A80;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+nav {
+  background-color: #98C1D9;
+}
+
+footer {
+  background-color: #98C1D9;
+}
+
+.media {
+  background-color: #E0FBFC;
+}
+
+#contact-form {
+  background-color: #E0FBFC;
+}
+
+#resume-card {
+  background-color: #E0FBFC;
+}
+
+#resume-download {
+  background-color: #E0FBFC;
 }

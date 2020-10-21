@@ -23,7 +23,7 @@ function Navigation() {
 
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <nav className="navbar navbar-expand-lg navbar-light">
                 <div className="" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
                     {tabs.map(tab => (
