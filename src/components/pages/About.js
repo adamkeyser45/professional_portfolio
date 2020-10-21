@@ -3,13 +3,21 @@ import React from 'react';
 function About() {
     return (
         <div className="jumbotron">
-            <img className="img-fluid" src={require("../../assets/img/adam_portrait_small.png")} 
-                alt="A protrait of Adam Keyser"/>
-            <h1 className="display-3">About Me</h1>
-            <p className="lead">
-                As a web developer, it is my goal to help create websites, applications, 
-                and tools that can be used by the masses to help improve their lives.
-            </p>
+            <div className="row">
+                <div className="col-12 col-md-2">
+                    <img className="img-fluid" src={require("../../assets/img/adam_portrait_small.png")} 
+                        alt="A protrait of Adam Keyser"/>
+                </div>
+                <div className="col-12 col-md-10">
+                    <h1 className="display-3">About Me</h1>
+                    <p className="lead">
+                        As a web developer, it is my goal to help create websites, applications, 
+                        and tools that can be used by the masses to help improve their lives.
+                    </p>
+                </div>
+
+            </div>
+
             <hr className="my-4" />
             <h4>My Journey</h4>
             <p>

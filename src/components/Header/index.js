@@ -3,7 +3,7 @@ import React from 'react';
 function Header() {
     return (
         <section>
-            <h1>Adam Keyser</h1>
+            <h1 className="h1 px-3">Adam Keyser- Web Developer</h1>
         </section>
     )
 }
