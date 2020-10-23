@@ -49,13 +49,21 @@ function Project() {
     return (
         <div >
             {projects.map(project => (
-                <div className="media border" key={project.name}>
-                    <img src={project.image} className="mr-3 p-2" alt=""/>
-                    <div className="media-body">
-                        <h5 className="mt-0">{project.name}</h5>
-                        <p>{project.description}</p>
-                        <a className="btn btn-primary m-1 p-2" href={project.deployedLink} target="_blank" rel="noopener noreferrer">Check out the App!</a>
-                        <a className="btn btn-primary m-1 p-2" href={project.repoLink} target="_blank" rel="noopener noreferrer">Check out the GitHub Repo!</a>
+                <div className="row">
+                    <div className="media border col-12" key={project.name}>
+                        <div className="row">
+                            <div className="">
+                                <img src={project.image} className="mr-3 p-2" alt=""/>
+                            </div>
+                            <div className="">
+                                <div className="media-body">
+                                    <h5 className="mt-0">{project.name}</h5>
+                                    <p>{project.description}</p>
+                                    <a className="btn btn-primary m-1 p-2" href={project.deployedLink} target="_blank" rel="noopener noreferrer">Check out the App!</a>
+                                    <a className="btn btn-primary m-1 p-2" href={project.repoLink} target="_blank" rel="noopener noreferrer">Check out the GitHub Repo!</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             ))}
