@@ -39,7 +39,7 @@ function Contact() {
 
     return (
         <section>
-            <div className="card">
+            <div id="contact-card" className="card">
                 <div className="card-body">
                     <h1 className="card-title">Contact Me</h1>
 

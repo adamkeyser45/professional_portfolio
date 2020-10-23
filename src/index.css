@@ -74,4 +74,13 @@ footer {
     text-align: center;
   }
 
+  #contact-card h1 {
+    text-align: center;
+  }
+
+  #contact-card .card {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
