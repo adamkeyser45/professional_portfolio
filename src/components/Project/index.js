@@ -52,7 +52,7 @@ function Project() {
                 <div className="row">
                     <div className="media border col-12" key={project.name}>
                         <div className="row">
-                            <div className="">
+                            <div className="project-img">
                                 <img src={project.image} className="mr-3 p-2" alt=""/>
                             </div>
                             <div className="">
