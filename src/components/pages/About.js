@@ -5,10 +5,10 @@ function About() {
         <div className="jumbotron">
             <div className="row">
                 <div className="col-12 col-md-2">
-                    <img className="img-fluid" src={require("../../assets/img/adam_portrait_small.png")} 
+                    <img id="adam-portrait" className="" src={require("../../assets/img/adam_portrait_small.png")} 
                         alt="A protrait of Adam Keyser"/>
                 </div>
-                <div className="col-12 col-md-10">
+                <div id="about-heading" className="col-12 col-md-10">
                     <h1 className="display-3">About Me</h1>
                     <p className="lead">
                         As a web developer, it is my goal to help create websites, applications, 
