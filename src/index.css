@@ -83,4 +83,18 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
+
+  #resume-card .h2{
+    text-align: center;
+  }
+
+  #resume-download {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #resume-download h2 {
+    text-align: center;
+  }
 }
