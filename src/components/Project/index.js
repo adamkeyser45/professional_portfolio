@@ -3,6 +3,13 @@ import React from 'react';
 function Project() {
     const projects = [
         {
+            name: 'javaDript',
+            image: require('../../assets/img/javaDript_small.png'),
+            deployedLink: 'https://sleepy-garden-49427.herokuapp.com/#',
+            repoLink: 'https://github.com/adamkeyser45/javadript',
+            description: 'A coffee subscription box service for coders and web developers!'
+        },
+        {
             name: 'The Speakeasy',
             image: require('../../assets/img/speakeasy_small.png'),
             deployedLink: 'https://fierce-forest-64673.herokuapp.com/',
