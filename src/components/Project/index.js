@@ -3,6 +3,13 @@ import React from 'react';
 function Project() {
     const projects = [
         {
+            name: 'Tandem Quiz App',
+            image: require('../../assets/img/tandem_small.png'),
+            deployedLink: 'https://adamkeyser45.github.io/tandem-quiz/',
+            repoLink: 'https://github.com/adamkeyser45/tandem-quiz',
+            description: 'A quiz application for you to practice trivia!'
+        },
+        {
             name: 'javaDript',
             image: require('../../assets/img/javaDript_small.png'),
             deployedLink: 'https://sleepy-garden-49427.herokuapp.com/#',
