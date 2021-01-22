@@ -41,7 +41,11 @@ function Contact() {
         <section>
             <div id="contact-card" className="card">
                 <div className="card-body">
-                    <h1 className="card-title">Contact Me</h1>
+                    <h1 className="card-title text-center">Contact Me</h1>
+
+                    <h4 className="text-center">
+                        Want to get in touch? Here are several ways to contact me!
+                    </h4>
 
                     <div className="card" style={{width:"18rem"}}>
                     <form id="contact-form" onSubmit={handleSubmit}>
