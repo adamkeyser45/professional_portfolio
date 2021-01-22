@@ -33,10 +33,6 @@ function Contact() {
         }
     }
 
-    function handleSubmit(e) {
-        e.preventDefault();
-    }
-
     return (
         <section>
             <div id="contact-card" className="card">
@@ -47,30 +43,33 @@ function Contact() {
                         Want to get in touch? Here are several ways to contact me!
                     </h4>
 
-                    <div className="card" style={{width:"18rem"}}>
-                    <form id="contact-form" onSubmit={handleSubmit}>
-                        <div className="px-2">
-                            <label htmlFor="Name">Name:</label>
-                            <br/>
-                            <input type="text" name="Name" defaultValue={name} onBlur={handleChange} style={{width:"16rem"}}/>
-                        </div>
-                        <div className="px-2">
-                            <label htmlFor="email">Email address:</label>
-                            <br/>
-                            <input type="email" name="email" defaultValue={email} onBlur={handleChange} style={{width:"16rem"}}/>
-                        </div>
-                        <div className="px-2">
-                            <label htmlFor="Message">Message:</label>
-                            <br/>
-                            <textarea name="Message" rows="5" defaultValue={message} onBlur={handleChange} style={{width:"16rem"}}/>
-                        </div>
-                        {errorMessage && (
-                            <div className="px-2">
-                                <p className="error-text">{errorMessage}</p>
+                    <div className="card">
+                        <div className="row">
+                            <div id="contact-email" className="text-center col-11 col-md-3" style={{border: "none"}}>
+                                <h2>Email</h2>
+                                <i className="fas fa-envelope-open-text fa-7x mx-auto" style={{width: "100px"}}></i>
+                                <h5>adam.keyser45@gmail.com</h5>
                             </div>
-                        )}
-                        <button className="btn btn-primary m-2" type="submit">Submit</button>
-                    </form>
+
+                            <div id="contact-email" className="text-center col-11 col-md-3" style={{border: "none"}}>
+                                <h2>Email</h2>
+                                <i className="fas fa-envelope-open-text fa-7x mx-auto" style={{width: "100px"}}></i>
+                                <h5>adam.keyser45@gmail.com</h5>
+                            </div>
+
+                            <div id="contact-email" className="text-center col-11 col-md-3" style={{border: "none"}}>
+                                <h2>Email</h2>
+                                <i className="fas fa-envelope-open-text fa-7x mx-auto" style={{width: "100px"}}></i>
+                                <h5>adam.keyser45@gmail.com</h5>
+                            </div>
+
+                            <div id="contact-email" className="text-center col-11 col-md-3" style={{border: "none"}}>
+                                <h2>Email</h2>
+                                <i className="fas fa-envelope-open-text fa-7x mx-auto" style={{width: "100px"}}></i>
+                                <h5>adam.keyser45@gmail.com</h5>
+                            </div>                
+                        </div>
+
                     </div>
                 </div>
             </div>
