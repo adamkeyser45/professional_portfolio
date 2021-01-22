@@ -39,11 +39,11 @@ function Contact() {
                 <div className="card-body">
                     <h1 className="card-title text-center">Contact Me</h1>
 
-                    <h4 className="text-center">
+                    <h5 className="text-center">
                         Want to get in touch? Here are several ways to contact me!
-                    </h4>
+                    </h5>
 
-                    <div className="card">
+                    <div className="card border-0 mt-3">
                         <div className="row">
                             <div id="contact-email" className="text-center col-11 col-md-3" style={{border: "none"}}>
                                 <h2>Email</h2>
@@ -52,21 +52,18 @@ function Contact() {
                             </div>
 
                             <div id="contact-email" className="text-center col-11 col-md-3" style={{border: "none"}}>
-                                <h2>Email</h2>
-                                <i className="fas fa-envelope-open-text fa-7x mx-auto" style={{width: "100px"}}></i>
-                                <h5>adam.keyser45@gmail.com</h5>
+                                <h2>Facebook</h2>
+                                <i className="fab fa-facebook-square fa-7x mx-auto" style={{width: "100px"}}></i>
                             </div>
 
                             <div id="contact-email" className="text-center col-11 col-md-3" style={{border: "none"}}>
-                                <h2>Email</h2>
-                                <i className="fas fa-envelope-open-text fa-7x mx-auto" style={{width: "100px"}}></i>
-                                <h5>adam.keyser45@gmail.com</h5>
+                                <h2>GitHub</h2>
+                                <i className="fab fa-github-square fa-7x mx-auto" style={{width: "100px"}}></i>
                             </div>
 
                             <div id="contact-email" className="text-center col-11 col-md-3" style={{border: "none"}}>
-                                <h2>Email</h2>
-                                <i className="fas fa-envelope-open-text fa-7x mx-auto" style={{width: "100px"}}></i>
-                                <h5>adam.keyser45@gmail.com</h5>
+                                <h2>LinkedIn</h2>
+                                <i className="fab fa-linkedin fa-7x mx-auto" style={{width: "100px"}}></i>
                             </div>                
                         </div>
 
