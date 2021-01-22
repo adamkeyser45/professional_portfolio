@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import EmailForm from '../EmailForm';
 
 function Contact() {
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
@@ -85,12 +86,9 @@ function Contact() {
                                 <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
-                            <div class="modal-body">
-                                ...
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
+                                <div class="modal-body">
+                                    <EmailForm></EmailForm>
+                                </div>
                             </div>
                         </div>
                     </div>
