@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 
-// import './ContactUs.css';
-
 export default function ContactUs() {
+    const [formState, setFormState] = useState({ user_name: '', user_email: '', message: '' });
+    const { user_name, user_email, message } = formState;
 
   function sendEmail(e) {
     e.preventDefault();
@@ -14,24 +14,58 @@ export default function ContactUs() {
       }, (error) => {
           console.log(error.text);
       });
+
+    setFormState({ user_name:"", user_email:"", message:"" });
   }
+
+  function handleChange(e) {
+    setFormState({...formState, [e.target.name]: e.target.value })
+    
+  }
+
+    console.log(formState);
 
   return (
     <form className="contact-form" onSubmit={sendEmail}>
-        <div class="form-group">
-            <label for="exampleInputEmail1">Name</label>
-            <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name" name="user_name" />
+        <div className="form-group">
+            <label htmlFor="exampleInputEmail1">Name</label>
+            <input 
+                type="text" 
+                className="form-control" 
+                id="exampleInputEmail1" 
+                aria-describedby="emailHelp" 
+                placeholder="Enter name"
+                name="user_name"
+                value={user_name}
+                onChange={handleChange}
+                 />
         </div>
-        <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="user_email"/>
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        <div className="form-group">
+            <label htmlFor="exampleInputEmail1">Email address</label>
+            <input 
+                type="email" 
+                className="form-control" 
+                id="exampleInputEmail1" 
+                aria-describedby="emailHelp" 
+                placeholder="Enter Email"
+                name="user_email"
+                value={user_email}
+                onChange={handleChange}
+                />
+            <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
-        <div class="form-group">
-            <label for="exampleFormControlTextarea1">Your Message</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message"></textarea>
+        <div className="form-group">
+            <label htmlFor="exampleFormControlTextarea1">Your Message</label>
+            <textarea 
+                className="form-control" 
+                id="exampleFormControlTextarea1" 
+                rows="3" 
+                name="message"
+                value={message}
+                onChange={handleChange} >
+            </textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Send</button>
+        <button type="submit" className="btn btn-primary">Send</button>
     </form>
   );
 }
