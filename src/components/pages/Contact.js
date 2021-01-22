@@ -47,27 +47,54 @@ function Contact() {
                         <div className="row">
                             <div id="contact-email" className="text-center col-11 col-md-3" style={{border: "none"}}>
                                 <h2>Email</h2>
-                                <i className="fas fa-envelope-open-text fa-7x mx-auto" style={{width: "100px"}}></i>
-                                <h5>adam.keyser45@gmail.com</h5>
+                                <a href='#'>
+                                <i type="button"className="fas fa-envelope-open-text fa-7x mx-auto" style={{width: "100px"}} data-toggle="modal" data-target="#exampleModal">
+                                </i></a>
                             </div>
 
-                            <div id="contact-email" className="text-center col-11 col-md-3" style={{border: "none"}}>
+                            <div id="contact-facebook" className="text-center col-11 col-md-3" style={{border: "none"}}>
                                 <h2>Facebook</h2>
-                                <i className="fab fa-facebook-square fa-7x mx-auto" style={{width: "100px"}}></i>
+                                <a href="https://www.facebook.com/adam.keyser" target="_blank" rel="noopener noreferrer">
+                                    <i className="fab fa-facebook-square fa-7x mx-auto" style={{width: "100px"}}></i>
+                                </a>
                             </div>
 
-                            <div id="contact-email" className="text-center col-11 col-md-3" style={{border: "none"}}>
+                            <div id="contact-github" className="text-center col-11 col-md-3" style={{border: "none"}}>
                                 <h2>GitHub</h2>
-                                <i className="fab fa-github-square fa-7x mx-auto" style={{width: "100px"}}></i>
+                                <a href="https://github.com/adamkeyser45" target="_blank" rel="noopener noreferrer">
+                                    <i className="fab fa-github-square fa-7x mx-auto" style={{width: "100px"}}></i>
+                                </a>
                             </div>
 
-                            <div id="contact-email" className="text-center col-11 col-md-3" style={{border: "none"}}>
+                            <div id="contact-linkedin" className="text-center col-11 col-md-3" style={{border: "none"}}>
                                 <h2>LinkedIn</h2>
-                                <i className="fab fa-linkedin fa-7x mx-auto" style={{width: "100px"}}></i>
+                                <a href="https://www.linkedin.com/in/adam-keyser-693741107/" target="_blank" rel="noopener noreferrer">
+                                    <i className="fab fa-linkedin fa-7x mx-auto" style={{width: "100px"}}></i>
+                                </a>
                             </div>                
                         </div>
-
                     </div>
+
+                    {/* <!-- Modal --> */}
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Send Me an Email</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         
