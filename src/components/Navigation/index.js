@@ -17,7 +17,7 @@ function Navigation() {
             case 'Resume':
                 return <Resume />
             default:
-              return <About />;
+              return <Portfolio />;
         }
     };
 
