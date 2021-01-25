@@ -1,73 +1,67 @@
-import React, { useState } from 'react';
+import React from 'react';
+import EmailForm from '../EmailForm';
 
 function Contact() {
-    const [formState, setFormState] = useState({ name: '', email: '', message: '' });
-    const { name, email, message } = formState;
-    const [errorMessage, setErrorMessage] = useState('');
-
-    function validateEmail(email) {
-        var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return re.test(String(email).toLowerCase());
-    }
-
-    function handleChange(e) {
-        if (e.target.name === 'email') {
-            const isValid = validateEmail(e.target.value);
-            console.log(isValid);
-            // isValid conditional statement
-            if (!isValid) {
-                setErrorMessage('Your email is invalid.');
-            } else {
-                setErrorMessage('');
-            }
-        } else {
-            if (!e.target.value.length) {
-              setErrorMessage(`${e.target.name} is required.`);
-            } else {
-              setErrorMessage('');
-            }
-        }
-        
-        if (!errorMessage) {
-            setFormState({...formState, [e.target.name]: e.target.value });
-        }
-    }
-
-    function handleSubmit(e) {
-        e.preventDefault();
-    }
 
     return (
         <section>
             <div id="contact-card" className="card">
                 <div className="card-body">
-                    <h1 className="card-title">Contact Me</h1>
+                    <h1 className="card-title text-center">Contact Me</h1>
 
-                    <div className="card" style={{width:"18rem"}}>
-                    <form id="contact-form" onSubmit={handleSubmit}>
-                        <div className="px-2">
-                            <label htmlFor="Name">Name:</label>
-                            <br/>
-                            <input type="text" name="Name" defaultValue={name} onBlur={handleChange} style={{width:"16rem"}}/>
-                        </div>
-                        <div className="px-2">
-                            <label htmlFor="email">Email address:</label>
-                            <br/>
-                            <input type="email" name="email" defaultValue={email} onBlur={handleChange} style={{width:"16rem"}}/>
-                        </div>
-                        <div className="px-2">
-                            <label htmlFor="Message">Message:</label>
-                            <br/>
-                            <textarea name="Message" rows="5" defaultValue={message} onBlur={handleChange} style={{width:"16rem"}}/>
-                        </div>
-                        {errorMessage && (
-                            <div className="px-2">
-                                <p className="error-text">{errorMessage}</p>
+                    <h5 className="text-center">
+                        Want to get in touch? Here are several ways to contact me!
+                    </h5>
+
+                    <div className="card border-0 mt-3">
+                        <div className="row">
+                            <div id="contact-email" className="text-center col-11 col-md-3" style={{border: "none"}}>
+                                <h2>Email</h2>
+                                <a href='#'>
+                                <i type="button"className="fas fa-envelope-open-text fa-7x mx-auto" style={{width: "100px"}} data-toggle="modal" data-target="#exampleModal">
+                                </i></a>
                             </div>
-                        )}
-                        <button className="btn btn-primary m-2" type="submit">Submit</button>
-                    </form>
+
+                            <div id="contact-facebook" className="text-center col-11 col-md-3" style={{border: "none"}}>
+                                <h2>Facebook</h2>
+                                <a href="https://www.facebook.com/adam.keyser" target="_blank" rel="noopener noreferrer">
+                                    <i className="fab fa-facebook-square fa-7x mx-auto" style={{width: "100px"}}></i>
+                                </a>
+                            </div>
+
+                            <div id="contact-github" className="text-center col-11 col-md-3" style={{border: "none"}}>
+                                <h2>GitHub</h2>
+                                <a href="https://github.com/adamkeyser45" target="_blank" rel="noopener noreferrer">
+                                    <i className="fab fa-github-square fa-7x mx-auto" style={{width: "100px"}}></i>
+                                </a>
+                            </div>
+
+                            <div id="contact-linkedin" className="text-center col-11 col-md-3" style={{border: "none"}}>
+                                <h2>LinkedIn</h2>
+                                <a href="https://www.linkedin.com/in/adam-keyser-693741107/" target="_blank" rel="noopener noreferrer">
+                                    <i className="fab fa-linkedin fa-7x mx-auto" style={{width: "100px"}}></i>
+                                </a>
+                            </div>                
+                        </div>
                     </div>
+
+                    {/* <!-- Modal --> */}
+                    <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div className="modal-dialog" role="document">
+                            <div className="modal-content">
+                            <div className="modal-header">
+                                <h5 className="modal-title" id="exampleModalLabel">Send Me an Email</h5>
+                                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                                <div className="modal-body">
+                                    <EmailForm></EmailForm>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         
