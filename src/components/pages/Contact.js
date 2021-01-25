@@ -15,28 +15,28 @@ function Contact() {
 
                     <div className="card border-0 mt-3">
                         <div className="row">
-                            <div id="contact-email" className="text-center col-11 col-md-3" style={{border: "none"}}>
+                            <div id="contact-email" className="text-center col-6 col-md-3" style={{border: "none"}}>
                                 <h2>Email</h2>
                                 <a href='#'>
                                 <i type="button"className="fas fa-envelope-open-text fa-7x mx-auto" style={{width: "100px"}} data-toggle="modal" data-target="#exampleModal">
                                 </i></a>
                             </div>
 
-                            <div id="contact-facebook" className="text-center col-11 col-md-3" style={{border: "none"}}>
+                            <div id="contact-facebook" className="text-center col-6 col-md-3" style={{border: "none"}}>
                                 <h2>Facebook</h2>
                                 <a href="https://www.facebook.com/adam.keyser" target="_blank" rel="noopener noreferrer">
                                     <i className="fab fa-facebook-square fa-7x mx-auto" style={{width: "100px"}}></i>
                                 </a>
                             </div>
 
-                            <div id="contact-github" className="text-center col-11 col-md-3" style={{border: "none"}}>
+                            <div id="contact-github" className="text-center col-6 col-md-3" style={{border: "none"}}>
                                 <h2>GitHub</h2>
                                 <a href="https://github.com/adamkeyser45" target="_blank" rel="noopener noreferrer">
                                     <i className="fab fa-github-square fa-7x mx-auto" style={{width: "100px"}}></i>
                                 </a>
                             </div>
 
-                            <div id="contact-linkedin" className="text-center col-11 col-md-3" style={{border: "none"}}>
+                            <div id="contact-linkedin" className="text-center col-6 col-md-3" style={{border: "none"}}>
                                 <h2>LinkedIn</h2>
                                 <a href="https://www.linkedin.com/in/adam-keyser-693741107/" target="_blank" rel="noopener noreferrer">
                                     <i className="fab fa-linkedin fa-7x mx-auto" style={{width: "100px"}}></i>
