@@ -3,19 +3,22 @@ import React from 'react';
 function About() {
     return (
         <div className="jumbotron">
-            <div className="row">
-                <div className="col-12 col-md-2">
-                    <img id="adam-portrait" className="" src={require("../../assets/img/adam_portrait_small.png")} 
+            <div class="card mb-3">
+            <div class="row no-gutters">
+                <div class="col-md-3">
+                <img id="adam-portrait" className="mx-auto mt-2 d-block" src={require("../../assets/img/adam_portrait_small.png")} 
                         alt="A protrait of Adam Keyser"/>
                 </div>
-                <div id="about-heading" className="col-12 col-md-10">
-                    <h1 className="display-3">About Me</h1>
-                    <p className="lead">
-                        As a web developer, it is my goal to help create websites, applications, 
-                        and tools that can be used by the masses to help improve their lives.
-                    </p>
+                <div class="col-md-9">
+                    <div class="card-body">
+                        <h1 className="display-4">About Me</h1>
+                        <p className="lead">
+                            As a web developer, it is my goal to help create websites, applications, 
+                            and tools that can be used by the masses to help improve their lives.
+                        </p>
+                    </div>
                 </div>
-
+            </div>
             </div>
 
             <hr className="my-4" />
@@ -34,7 +37,7 @@ function About() {
             </p>
             <p>
                 This is when I decided to make a change of careers, and pursue a career in Web Development. I began an online Coding Bootcamp through
-                Vanderbilt University, where I am earning a certificate in Full-Stack Web Development.
+                Vanderbilt University, where I earned a certificate in Full-Stack Web Development. I am now seeking employment on a Web Development team!
             </p>
         </div>
     )
