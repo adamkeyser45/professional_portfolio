@@ -24,6 +24,7 @@ export default function ContactUs() {
 
   return (
     <form className="contact-form" onSubmit={sendEmail}>
+        <h6 className="text-center">Use this form to send me an email or at: adam.keyser45@gmail.com</h6>
         <div className="form-group">
             <label htmlFor="exampleInputEmail1">Name</label>
             <input 
