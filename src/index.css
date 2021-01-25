@@ -37,6 +37,12 @@ footer {
   background-color: #E0FBFC;
 }
 
+.twoBtns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 570px) {
   
   #page-header {
@@ -63,12 +69,6 @@ footer {
   #about-heading {
     text-align: center;
   }
-
-  /* .project-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  } */
 
   .media-body {
     text-align: center;

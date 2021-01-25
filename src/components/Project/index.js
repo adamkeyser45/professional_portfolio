@@ -52,7 +52,7 @@ function Project() {
         },
         {
             name: 'NoSQL Social Network API',
-            image: require('../../assets/img/social_network_api_big.png'),
+            image: require('../../assets/img/social_network_api_small.png'),
             deployedLink: 'https://github.com/adamkeyser45/mod18challenge/blob/main/assets/mod18challenge-walkthrough.mp4',
             repoLink: 'https://github.com/adamkeyser45/mod18challenge',
             description: 'An API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list.',
@@ -72,41 +72,18 @@ function Project() {
         <div className="card-columns">
             {projects.map(project => (
 
-            <div class="card mb-3" >
-                <div class="row ">
-                    <div class="col-md-4">
-                        <img src={project.image} class="card-img" alt="..." />
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                        <h5 class="card-title">{project.name}</h5>
-                        <p class="card-text">{project.description}</p>
-                        <a className="btn btn-primary m-1 p-2" href={project.deployedLink} target="_blank" rel="noopener noreferrer">Check out the App!</a>
-                        <a className="btn btn-primary m-1 p-2" href={project.repoLink} target="_blank" rel="noopener noreferrer">Check out the GitHub Repo!</a>
-                        <p class="card-text"><small class="text-muted">Technologies Used: {project.technologies}</small></p>
+                <div className="card" key={project.name}>
+                    <img src={project.image} className="card-img-top" alt="..." />
+                    <div className="card-body">
+                        <h5 className="card-title text-center">{project.name}</h5>
+                        <p className="card-text text-center">{project.description}</p>
+                        <p className="card-text text-center"><small className="text-muted">Technologies Used: {project.technologies}</small></p>
+                        <div className="card-footer twoBtns">
+                            <a className="btn btn-primary mx-1 p-2" href={project.deployedLink} target="_blank" rel="noopener noreferrer">Link to App</a>
+                            <a className="btn btn-primary mx-1 p-2" href={project.repoLink} target="_blank" rel="noopener noreferrer">GitHub Repo!</a>
                         </div>
                     </div>
                 </div>
-            </div>
-
-                // <div className="row">
-                //     <div className="media border col-12" key={project.name}>
-                //         <div className="row">
-                //             <div className="col-4">
-                //                 <img src={project.image} className="p-2 border border-secondary rounded" alt=""/>
-                //             </div>
-                //             <div className="col-8">
-                //                 <div className="media-body">
-                //                     <h5 className="mt-0">{project.name}</h5>
-                //                     <p>{project.description}</p>
-                //                     <p>Technologies Used: {project.technologies}</p>
-                                    // <a className="btn btn-primary m-1 p-2" href={project.deployedLink} target="_blank" rel="noopener noreferrer">Check out the App!</a>
-                                    // <a className="btn btn-primary m-1 p-2" href={project.repoLink} target="_blank" rel="noopener noreferrer">Check out the GitHub Repo!</a>
-                //                 </div>
-                //             </div>
-                //         </div>
-                //     </div>
-                // </div>
             ))}
         </div>
     )
