@@ -1,31 +1,31 @@
 {
   "files": {
-    "main.css": "/professional_portfolio/static/css/main.f2588b56.chunk.css",
-    "main.js": "/professional_portfolio/static/js/main.15bb3d4e.chunk.js",
-    "main.js.map": "/professional_portfolio/static/js/main.15bb3d4e.chunk.js.map",
+    "main.css": "/professional_portfolio/static/css/main.4d6d16fe.chunk.css",
+    "main.js": "/professional_portfolio/static/js/main.f10e0c76.chunk.js",
+    "main.js.map": "/professional_portfolio/static/js/main.f10e0c76.chunk.js.map",
     "runtime-main.js": "/professional_portfolio/static/js/runtime-main.b4300739.js",
     "runtime-main.js.map": "/professional_portfolio/static/js/runtime-main.b4300739.js.map",
     "static/js/2.15d8eb57.chunk.js": "/professional_portfolio/static/js/2.15d8eb57.chunk.js",
     "static/js/2.15d8eb57.chunk.js.map": "/professional_portfolio/static/js/2.15d8eb57.chunk.js.map",
     "index.html": "/professional_portfolio/index.html",
-    "precache-manifest.4d35745c47a69d6011e53d84fa2e81dc.js": "/professional_portfolio/precache-manifest.4d35745c47a69d6011e53d84fa2e81dc.js",
+    "precache-manifest.b1742153be69cfa6ec0039d4d9fa4e37.js": "/professional_portfolio/precache-manifest.b1742153be69cfa6ec0039d4d9fa4e37.js",
     "service-worker.js": "/professional_portfolio/service-worker.js",
-    "static/css/main.f2588b56.chunk.css.map": "/professional_portfolio/static/css/main.f2588b56.chunk.css.map",
+    "static/css/main.4d6d16fe.chunk.css.map": "/professional_portfolio/static/css/main.4d6d16fe.chunk.css.map",
     "static/js/2.15d8eb57.chunk.js.LICENSE.txt": "/professional_portfolio/static/js/2.15d8eb57.chunk.js.LICENSE.txt",
-    "static/media/Adam_Keyser_Resume.pdf": "/professional_portfolio/static/media/Adam_Keyser_Resume.90718660.pdf",
+    "static/media/Adam_Keyser_Resume.pdf": "/professional_portfolio/static/media/Adam_Keyser_Resume.69987f90.pdf",
     "static/media/adam_portrait_small.png": "/professional_portfolio/static/media/adam_portrait_small.f6aa98dd.png",
-    "static/media/budget_tracker_small.png": "/professional_portfolio/static/media/budget_tracker_small.6d6e773f.png",
-    "static/media/javaDript_small.png": "/professional_portfolio/static/media/javaDript_small.be8a034d.png",
-    "static/media/news_by_the_map_small.png": "/professional_portfolio/static/media/news_by_the_map_small.9395c062.png",
-    "static/media/regex_small.png": "/professional_portfolio/static/media/regex_small.35df09d5.png",
+    "static/media/budget_tracker_big.png": "/professional_portfolio/static/media/budget_tracker_big.7ec7dad6.png",
+    "static/media/javaDript_big.png": "/professional_portfolio/static/media/javaDript_big.b92a546e.png",
+    "static/media/news_by_the_map_big.jpg": "/professional_portfolio/static/media/news_by_the_map_big.72b0d415.jpg",
+    "static/media/regex_big.png": "/professional_portfolio/static/media/regex_big.84d5c6e0.png",
     "static/media/social_network_api_small.png": "/professional_portfolio/static/media/social_network_api_small.a0636f1d.png",
-    "static/media/speakeasy_small.png": "/professional_portfolio/static/media/speakeasy_small.f8361fb3.png",
-    "static/media/tech_blog_small.png": "/professional_portfolio/static/media/tech_blog_small.35db2fbf.png"
+    "static/media/speakeasy_big.png": "/professional_portfolio/static/media/speakeasy_big.de7d0d23.png",
+    "static/media/tech_blog_big.png": "/professional_portfolio/static/media/tech_blog_big.38391108.png"
   },
   "entrypoints": [
     "static/js/runtime-main.b4300739.js",
     "static/js/2.15d8eb57.chunk.js",
-    "static/css/main.f2588b56.chunk.css",
-    "static/js/main.15bb3d4e.chunk.js"
+    "static/css/main.4d6d16fe.chunk.css",
+    "static/js/main.f10e0c76.chunk.js"
   ]
 }
